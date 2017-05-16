@@ -96,10 +96,26 @@ main {
   margin-left: 2.5%;
   margin-right: 2.5%;
   display: inline-block;
+  position: relative;
+  overflow: hidden;
 }
 
 #posts-principais .post .titulo {
   text-shadow: 1px 1px black;
+  position: absolute;
+  left: 6px;
+  right: 6px;
+  opacity: 0.35;
+  padding: 5px;
+  top: 1em;
+  opacity: 0;
+  transition: all 200ms ease;
+}
+
+#posts-principais .post:hover .titulo {
+  opacity: 1;
+  top: 6px;
+  background-color: rgba(255,255,255,.65);
 }
 
 #posts-principais .post img {
@@ -146,6 +162,9 @@ main {
 }
 
 #tags {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   float: right;
   width: 300px;
   background: black;
@@ -156,6 +175,16 @@ main {
 
 #tags h1 {
   margin-bottom: 1em;
+}
+
+.tag-1, .tag-2, .tag-3 {
+  position: relative;
+  cursor: pointer;
+}
+
+.tag-1:active, .tag-2:active, .tag-3:active {
+  left: -2px;
+  top: -2px;
 }
 
 .tag-1,
@@ -215,4 +244,51 @@ footer .texto-rodape {
 
 #backdrop video {
   width: 100%;
+}
+
+.boo {
+  position: absolute;
+  width: 40px;
+  transition: all 100ms ease;
+}
+
+.boo:hover {
+  opacity: 0.2;
+}
+
+#boo1 {
+  left: 100px;
+  top: 200px;
+}
+
+#boo2 {
+  right: 250px;
+  bottom: 10px;
+}
+
+#boo3 {
+  top: 400px;
+  left: 200px;
+  transform: scaleX(-1);
+}
+
+
+#voltar-topo {
+  background-color: white;
+  border-radius: 20%;
+  border: 2px solid silver;
+  font-size: 35px;
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  text-decoration: none;
+}
+
+#voltar-topo::before {
+  content: "⬆️";
+  display: inline;
 }

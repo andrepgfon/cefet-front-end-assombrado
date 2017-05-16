@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="imgs/favicon.png">
   </head>
   <body>
-    <header>
+    <header id="topo-da-pagina">
       <h1>Blog Assombrado</h1>
       <h2>Notícias e reportagens sobre o desconhecido</h2>
       <nav>
@@ -75,6 +75,12 @@
             Análises. Será que elas existem?</h2>
         </article>
       </section>
+
+      <img src="imgs/boo1.gif" class="boo" id="boo1">
+      <img src="imgs/boo2.gif" class="boo" id="boo2">
+      <img src="imgs/boo3.gif" class="boo" id="boo3">
+
+      <a href="#topo-da-pagina" id="voltar-topo"></a>
     </main>
 
     <footer>
@@ -95,11 +101,12 @@
 
     <script>
       // faz o vídeo desaparecer de leve assim que terminar
-      let tempo = 11000;  // 11s, duração do vídeo
+      let tempo = 100;  // 11s, duração do vídeo
       setTimeout(() => {
         document.getElementById('backdrop').classList.add('desaparecido')
         document.getElementsByTagName('main')[0].classList.remove('desaparecido')
       }, tempo);
     </script>
+    <script src="js/boos.js"></script>
   </body>
 </html>
