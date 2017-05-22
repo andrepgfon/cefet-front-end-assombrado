@@ -78,8 +78,6 @@ Quando o mouse passar sobre² um _boo_, ele deve ficar semitransparente - propri
 
 Se quiser, você pode alterar seu tamanho (coloquei `width: 40px` nos meus) e também invertê-los horizontalmente para fazê-los olharem para a esquerda (veja o [FAQ](#faq)).
 
-<!-- Ao terminar de estilizá-los, coloque uma classe `boo` em seus elementos de imagens e, então, inclua o arquivo `boos.js` na página. Veja [como incluir um arquivo JavaScript no FAQ](#faq). -->
-
 ### ²: "mouse passar sobre"
 
 Lembre-se da pseudo-classe `:hover` que costumamos usar para _links_ mas podemos usar para estilizar qualquer elemento no momento em que o mouse paira sobre ele.
@@ -141,13 +139,7 @@ Neste exercício, queremos deixar a nuvem de _tags_ (elemento `#tags`) grudenta,
      }
      ```
 
-<!-- 1. Como incluir um **arquivo JavaScript**?
-   Para incluir um arquivo JavaScript em uma página HTML, basta usar a _tag_ `<script src="..."></script>` e passar, no atributo `src`, o caminho para o arquivo:
-   ```html
-   <script src="caminho-para-arquivo.js"></script>
-   ``` -->
 
 
 
-
-[propriedade-position]: https://fegemo.github.io/cefet-front-end/
+[propriedade-position]: https://fegemo.github.io/cefet-front-end/classes/css4/#valores-position
