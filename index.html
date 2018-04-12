@@ -8,10 +8,10 @@
     <link rel="shortcut icon" href="imgs/favicon.png">
   </head>
   <body>
-    <div id="header">
+    <header>
       <h1>Blog Assombrado</h1>
       <h2>Notícias e reportagens sobre o desconhecido</h2>
-      <div id="navigation">
+      <nav>
         <ul>
           <li><a href="index.html">Inicial</a></li>
           <li><a href="#ovnis.html">UFOlogia</a></li>
@@ -20,9 +20,9 @@
           <li><a href="#lugares-misteriosos.html">Lugares Misteriosos</a></li>
           <li><a href="#especiais.html">Especiais</a></li>
         </ul>
-      </div>
-    </div>
-    <div id="conteudo-principal" class="desaparecido">
+      </nav>
+    </header>
+    <main class="desaparecido">
       <section id="tags">
         <h1>Nuvem de <em>tags</em></h1>
         <span class="tag-3">UFO</span>
@@ -34,50 +34,52 @@
         <span class="tag-1">Saci</span>
       </section>
 
-      <div id="posts-principais">
+      <section id="posts-principais">
         <h1>Principais Postagens</h1>
-        <div class="post">
+        <article class="post">
           <img src="imgs/arvores.jpg" alt="">
           <h2 class="titulo">Conheça a Enigmática "Crooked Forest": Centenas de Árvores
             em uma Floresta Foram Entortadas por "Forças Misteriosas", na Polônia?</h2>
-          <span class="time" datetime="2017-05-09">09 de maio de 2017</span>
-        </div>
-        <div class="post">
+          <time datetime="2017-05-09">09 de maio de 2017</time>
+        </article>
+        <article class="post">
           <img src="imgs/ursa.jpg" alt="">
           <h2 class="titulo">O Mistério de Szenja: Uma Ursa Polar Morreu de "Coração Partido"
             ao ser Separada de Sua Companheira no SeaWorld, nos Estados Unidos?</h2>
-          <span class="time" datetime="2017-05-09">07 de maio de 2017</span>
-        </div>
-      </div>
+          <time datetime="2017-05-09">07 de maio de 2017</time>
+        </article>
+      </section>
 
-      <div id="posts-mais-recentes">
+      <section id="posts-mais-recentes">
         <h1>Últimas Postagens</h1>
-        <div class="post novidade">
-          <span class="time" datetime="2017-05-09">09/05/2017</span>
+        <article class="post novidade">
+          <time datetime="2017-05-09">09/05/2017</time>
           <h2 class="titulo">O Projeto Manhatan e a Construção das
             Primeiras Bombas Atômicas</h2>
-        </div>
-        <div class="post novidade">
-          <span datetime="2017-05-09">09/05/2017</span>
+        </article>
+        <article class="post novidade">
+          <time datetime="2017-05-09">09/05/2017</time>
           <h2 class="titulo">A Misteriosa "Vulture Stone": Um "Pilar de
             Pedra" Provocou um Verdadeiro Caos na
             Terra Há 13 Mil Anos?</h2>
-        </div>
-        <div class="post">
-          <span class="time" datetime="2017-05-08">08/05/2017</span>
+        </article>
+        <article class="post">
+          <time datetime="2017-05-08">08/05/2017</time>
           <h2 class="titulo">O "Fantasma de um Homem" Subindo uma Escadaria
             Apareceu em uma Mansão "Mal-Assombrada" do Século XVII, na
             Inglaterra?</h2>
-        </div>
-        <div class="post">
-          <span class="time" datetime="2017-04-16">16/04/2017</span>
+        </article>
+        <article class="post">
+          <time datetime="2017-04-16">16/04/2017</time>
           <h2 class="titulo">Sereias: Lenda, Fotos, Vídeos, Relatos e
             Análises. Será que elas existem?</h2>
-        </div>
-      </div>
-    </div>
+        </article>
+      </section>
 
-    <div id="footer">
+
+    </main>
+
+    <footer>
       <img class="logo-rodape" src="imgs/logo-assombrado.png"
         alt="Logo do canal do Youtube Assombrado">
       <p class="texto-rodape">
@@ -86,19 +88,19 @@
         Canal Assombrado</a> do Youtube e do blog
         <a href="http://assombrado.com.br">AssombradO.com.br</a>
       </p>
-    </div>
+    </footer>
 
-    <div id="lateral" class="backdrop">
+    <aside class="backdrop">
       <video src="videos/vinheta.mp4" autoplay>
       </video>
-    </div>
+    </aside>
 
     <script>
       // faz o vídeo desaparecer de leve assim que terminar
-      let tempo = 11000;  // 11s, duração do vídeo
+      let tempo = 1500;  // 11s, duração do vídeo
       setTimeout(() => {
         document.getElementsByClassName('backdrop')[0].classList.add('desaparecido')
-        document.getElementById('conteudo-principal').classList.remove('desaparecido')
+        document.getElementsByTagName('main')[0].classList.remove('desaparecido')
       }, tempo);
     </script>
   </body>
